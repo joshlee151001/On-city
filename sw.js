@@ -1,6 +1,6 @@
-// On-city 서비스 워커: 홈 화면 앱으로 열리게 + 인터넷이 느릴 때 저장해 둔 화면 먼저
-const CACHE = "oncity-v1";
-const LIB = "oncity-lib-13.1.0";
+// On-stock 서비스 워커: 홈 화면 앱으로 열리게 + 인터넷이 느릴 때 저장해 둔 화면 먼저
+const CACHE = "onstock-v2";
+const LIB = "onstock-lib-13.1.0";
 const SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
